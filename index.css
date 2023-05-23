@@ -1,0 +1,479 @@
+/* CSS Reset */
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f1);
+}
+
+/* VARIABLES: Colors | Fonts */
+:root {
+    --p1: #06283D;
+    --p2: #1363DF;
+    --p3: #47B5FF;
+    --p4: #DFF6FF;
+    --p5: #FAFAFA;
+    --p6: #C7EEFF;
+    --p6: #0077C0;
+    --p7: #1D242B;
+    --p8: #F0F87F;
+    --p9: #4BC87F;
+    --p10: #29668B;
+    --p11: #6EAFF7;
+    --f1: 'Poppins', sans-serif;
+}
+
+/* Body properties */
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+/* == Modal Backdrop blur */
+div.modal {
+	background-color: transparent !important;
+	backdrop-filter: blur(10px) !important;
+}
+
+
+/* == Modal Dialogue blur */
+.blur .modal-content {
+	background-color: transparent;
+	backdrop-filter: blur(20px);
+	border: transparent;
+}
+
+/* Modal Content Text color */
+.blur .modal-content p, .blur .modal-content span, .blur .modal-content h2, .blur .modal-content h3, .blur .modal-content h5 {
+	color: white;
+}
+
+/* == Remove Modal Footer Top Border */
+.blur .modal-footer {
+	border: none;
+}
+
+/* NAVBAR STARTS */
+
+/* Brand Logo */
+#brand_logo {
+	width: 100px;
+	height: auto;
+}
+
+/* Nav Shadow */
+#nav {
+	box-shadow: 0 5px 8px rgba(17, 17, 17, 0.5);
+}
+
+.navbar {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+	backdrop-filter: blur(20px) !important;
+}
+
+/* NAVBAR ENDS */
+
+/* MAIN HTML TAG STARTS */
+
+/* Landing Section Starts */
+
+
+/* == Background Color and Image */
+#landing {
+	background: url("./images/bottom.webp") right bottom no-repeat , url("./images/marjohn.webp") right -9rem bottom no-repeat, url("./images/modern.svg") right bottom no-repeat;
+	background-size: 100% auto, auto 60%, cover;
+    height: calc(100vh - 40px);
+    position: relative;
+}
+
+/* == Name - About me */
+#myname {
+    color: var(--p3);
+    font-size: 3rem;
+    line-height: 2.8rem;
+/*    background: -webkit-linear-gradient(90deg, var(--p3), var(--p6));*/
+	/*-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: white;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 1.0), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* == Description - About me */
+.desc {
+	font-size: 9pt;
+	border-width: 2px !important;
+	border-color: var(--p8) !important;
+}
+
+/* == Skills - About me */
+.desc span {
+    font-weight: 700;
+}
+
+/* == Button Text Color - About me */
+#profiles button span, #profiles button a {
+	color: var(--p7);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 9pt;
+}
+
+/* == Full Stack Developer Button - About me */
+#profiles button:first-child {
+	background-color: var(--p9);
+}
+
+/* Full Stack Developer Button @hover - About me */
+#profiles button:first-child:hover {
+	background-image: linear-gradient(90deg, var(--p9), #affd70);
+}
+
+/* == Full Stack Developer Button - About me */
+#profiles button:last-child {
+	background-color: var(--p8);
+}
+
+/* == Full Stack Developer Button @hover - About me */
+#profiles button:last-child:hover {
+	background-image: linear-gradient(90deg, var(--p8), #ffcd44);
+}
+
+/* Landing Section Ends */
+
+/* Projects Section Starts */
+
+/* == Background - Projects */
+#projects {
+	background: url("./images/top.webp") left top no-repeat, linear-gradient(#eff1ec, #eff1ec);
+	background-size: 100%, cover
+}
+
+/* == <hr> styling STARTS */
+#fullstack hr {
+	border-color: var(--p8);
+	width: 40%;
+	margin: 0 auto 0.5rem auto;
+}
+
+#designer hr {
+	border-color: var(--p8);
+	width: 40%;
+	margin: 0 auto 0.5rem auto;
+}
+
+/* == <hr> styling ENDS */
+
+/* == Project <h2> STARTS */
+#fullstack h2 {
+	font-weight: 700;
+	color: var(--p1);
+}
+
+#designer h2 {
+	font-weight: 700;
+	color: var(--p1);
+}
+
+/* == Project <h2> ENDS */
+
+
+/* == Carousel Indicators */
+.carousel-indicators li {
+	height: 30px !important;
+	border-radius: 50%;
+	transform: translateY(20px);
+}
+
+/* == Project <h3> STARTS */
+#fullstack h3 {
+	font-weight: 300;
+	color: var(--p1);
+	margin-top: 0;
+}
+
+#designer h3 {
+	font-weight: 300;
+	color: var(--p1);
+	margin-top: 0;
+}
+
+/* == Project <h3> ENDS */
+
+/* == Carousel Border Radius */
+#fullstack .carousel-inner {
+	border-radius: 25px !important;
+}
+
+
+/* == Fullstack Carousel panel dark overlay */
+#fullstack_carousel .carousel-caption {
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(315deg, rgba(255, 255, 255, 0.2), rgba(204, 204, 204, 0.2));
+	border-radius: 25px
+}
+
+/* == Fullstack Projects Caption Font Styling */
+#fullstack .carousel-caption h5 {
+	font-weight: 500;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 1.0), 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#fullstack .carousel-caption p {
+	margin-bottom: 0;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 1.0), 0 0 5px rgba(0, 0, 0, 0.5);
+	padding: 0 2rem;
+}
+
+/* == Fullstack Projects Panel Image blur */
+#fullstack .carousel-item img {
+	filter: blur(3px);
+}
+
+/* == Card Images Property */
+.card {
+	border-radius: 0;
+	border-color: transparent;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+/* == Hide Card Header on phone screens */
+h5[class^="card"] {
+	display: none;
+}
+
+/* == Card text size in Graphic Design Carousel*/
+p[class^="card"] {
+	font-size: 10pt;
+	font-weight: 500;
+	text-align: left;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 1.0), 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* == Modal Content Text Margin */
+.modal-body p {
+	padding-top: 1rem;
+	text-align: justify;
+}
+
+/* == Modal Content Links */
+.modal-body a:not(a.b-link), .modal-body a:not(a.b-link):link, .modal-body a:not(a.b-link):active, .modal-body a:not(a.b-link):visited {
+	color: white;
+	background-color: var(--p11);
+	border-radius: 5px;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+.modal-body a:not(a.b-link):hover {
+	transform: translate(1.2);
+}
+
+/* == Modal Content Panel Pointer */
+.modal-body span {
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* == Modal Content Institutions mentioned styling */
+.modal-body span.entity {
+	font-weight: 200;
+}
+
+/* == Projects Section Ends */
+
+/* Tools Section Starts */
+
+/* == Padding Top */
+#tools {
+	padding-top: 4rem !important;
+}
+
+/* == Tools icon size */
+[id$="-class"] img {
+	width: 60px !important;
+	height: auto;
+}
+
+/* == Tools row width */
+#fullstack_carousel, #graphic_design_carousel, #dev-tools, #design-tools {
+	width: 80%;
+	height: auto;
+	margin: auto auto;
+}
+
+/* == Tools Header */
+#dev-tools h2, #design-tools h2 {
+	
+}
+
+/* == Tools Label */
+#dev-tools img + p, #design-tools img + p {
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+/* Tools Margin Bottom */
+#dev-tools > div:not(first-child), #design-tools > div:not(first-child) {
+	margin-bottom: 1rem;
+}
+
+/* == Font styling */
+#dev-tools h2, #design-tools h2 {
+	font-weight: 700;
+}
+
+/* == Horizontal Rules styling - Tools */
+#tools hr {
+	border-color: var(--p6);
+	width: 40%;
+	margin: 0 auto 2rem auto;
+}
+
+/* Tools name styling */
+#tools p {
+	text-align: center;
+	font-size: 8pt;
+}
+
+/* == Hide Tools expertise on default */
+.progress {
+	visibility: hidden;
+}
+
+/* == Show Progress on Hover Starts */
+
+.html:hover .progress {
+	visibility: visible;
+}
+
+.css:hover .progress {
+	visibility: visible;
+}
+
+.js:hover .progress {
+	visibility: visible;
+}
+
+.bootstrap:hover .progress {
+	visibility: visible;
+}
+
+.ps:hover .progress {
+	visibility: visible;
+}
+
+.ai:hover .progress {
+	visibility: visible;
+}
+
+.ind:hover .progress {
+	visibility: visible;
+}
+
+.lrc:hover .progress {
+	visibility: visible;
+}
+
+/* == Show Progress on Hover Ends */
+
+/* == Tools Expertise Starts */
+
+#html {
+	width: 90%;
+}
+
+#css {
+	width: 85%;
+}
+
+#js {
+	width: 50%;
+}
+
+#bootstrap {
+	width: 75%;
+}
+
+#ps {
+	width: 95%;
+}
+
+#ai {
+	width: 94%;
+}
+
+#ind {
+	width: 89%;
+}
+
+#lrc {
+	width: 85%;
+}
+
+/* == Tools Expertise Ends */
+
+/* Tools Section Ends */
+
+/* Contact Section Starts */
+
+/* == Form background */
+#contact {
+	background-color: var(--p7);
+}
+
+/* == Contact Me Text */
+#contact h2 {
+	padding: 2rem 0 0 0 !important;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* == Form labels margin */
+#contact label {
+	margin: 0.5rem 0 0 0;
+}
+
+/* == Textarea margin */
+#contact textarea {
+	margin-top: 0 !important;
+}
+
+/* == Input Focus Styling */
+input:focus, textarea:focus, select:focus {
+	box-shadow: 2px 2px 5px rgba(71, 181, 255, 0.5) inset;
+	outline: none;
+	border: transparent;
+	border-radius: 10px;
+}
+
+/* Contact Section Ends */
+
+
+/* MAIN HTML TAG ENDS */
+
+/* FOOTER STARTS */
+
+footer {
+	background-color: var(--p3);
+	color: white;
+	text-align: center;
+	padding: 0.5rem 0 1.5rem 0 !important;
+}
+
+footer span {
+	margin: 0 0.5rem;
+}
+
+footer a:link, footer a:hover, footer a:visited, footer a:active {
+	text-decoration: none;
+	color: white;
+}
+
+/* FOOTER ENDS */

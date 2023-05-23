@@ -1,0 +1,75 @@
+/* LARGE SCREEN */
+
+@media (min-width:992px) {
+
+	/* MY NAME */
+	#about_me h2 {
+		font-size: 4rem;
+		line-height: 5rem;
+		margin-top: -2rem;
+	}
+
+
+	/* MY PROFILE IMAGE */
+	#landing {
+		background: url("./images/marjohn.webp") right -4rem bottom no-repeat, url("./images/modern.svg") right bottom no-repeat;
+		background-size: auto 90%, cover;
+	}
+
+	/* FULLSTACK AND GRAPHIC DESIGNER PROJECTS SIDE-BY-SIDE */
+	#fullstack, #designer {
+		width: 50% !important;
+	}
+
+	/* PROJECT HEADER FONT SIZE */
+	#projects #fullstack h2, #projects #designer h2 {
+		font-size: 2rem;
+/*		color: white;*/
+	}
+
+	/* GRAPHIC DESIGNER HEADER FONT COLOR */
+	/*#projects #designer h2, #projects #designer h3, #projects #designer hr {
+		color: white;
+		border-color: var(--p8);
+	}*/
+
+
+	/* FULLSTACK CAROUSEL POSITION ADJUSTMENT */
+	#fullstack_carousel {
+		margin-top: 1rem;
+	}
+
+	/* WEB DEV HEADER */
+	#fullstack h2, #designer h2 {
+		font-size: 3rem;
+	}
+
+	#fullstack h3, #designer h3 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+
+/* EXTRA LARGE SCREEN */
+
+@media (min-width:1366px) {
+
+	/* MY NAME */
+	#about_me h2 {
+		font-size: 5rem;
+		line-height: 6.1rem;
+		margin-top: -2rem;
+	}
+
+	/* PROFILE BUTTONS SIZE */
+	#profiles span {
+		display: inline-block;
+		font-size: 1.1rem !important;
+		padding: 0.8rem;
+	}
+	
+	
+	
+}

@@ -1,0 +1,38 @@
+@media (min-width:768px) {
+
+	/* MY NAME */
+	#about_me h2 {
+		font-size: 5rem;
+		line-height: 4.5rem;
+	}
+
+	/* MY DESCRIPTION */
+	.desc {
+		font-size: 1rem;
+	}
+
+	/* MY PROFILE IMAGE */
+	#landing {
+		background-size: 100% auto, auto 70%, cover;
+	}
+
+	/* WEB DEV HEADER */
+	#fullstack h2, #designer h2 {
+		font-size: 3rem;
+	}
+
+	#fullstack h3, #designer h3 {
+		font-size: 2rem;
+	}
+
+
+	/* TOOLS HEADER */
+	#dev-tools h2, #design-tools h2 {
+		font-size: 3rem;
+		margin: auto -2rem 1rem auto;
+	}
+
+
+
+
+}
